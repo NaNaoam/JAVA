@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class inoutEx{
+
+public static void main (String [] args) {
+
+
+	Scanner sc = new Scanner(System.in);
+		String k;
+		int n = sc.nextInt();
+		//next(),nextInt() 는 구분자 앞까지 읽음
+		
+		System.out.println(n);
+		k = sc.nextLine();
+		//nextLine()는 구분자 포함해서 읽음
+  // nextline 이랑 next 차이 꼭 기억할 것.
+		//nextLine()으로 입력 받을 경우, 먼저 키보드 버퍼를 비워야함.남아있는 개행 구분자를 버리기 위해서
+		sc.nextLine(); // 키보드 버퍼 비우기
+		System.out.println(k+" : "+k.length());
+		sc.close();
+
+  }
+  }
