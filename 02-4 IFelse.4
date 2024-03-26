@@ -1,0 +1,61 @@
+import java.util.Scanner;
+public class IFelse {
+
+	public static void main(String[] args) {
+ Scanner sc=new Scanner(System.in);
+
+		System.out.println("에스프레소? 아메리카노?");
+
+		String order = sc.next();
+
+		int price=0;
+		
+		if (order.equals("아메리카노")) {// 입력 받은 string 이랑 "" 안의 string 이 같은지 비교하는 연산자 
+
+			price=2500;
+
+			System.out.println("몇 잔?");
+
+			int co=sc.nextInt();
+
+				{if (co>=5)
+
+					System.out.println((int)(co*price*0.9));
+
+				else
+
+					System.out.print(co*price);
+
+						}	
+
+		}
+
+		else if (order.equals("에스프레소")) {
+
+			price=2000;
+
+			System.out.println("몇 잔?");
+
+			int co = sc.nextInt();
+
+				if (co>=7)
+					System.out.println((int)(co*price*0.9));
+
+				else
+
+					System.out.print(co*price);
+
+		}
+
+		else 
+
+			System.out.print("메뉴에 없습니다");
+		
+
+		sc.close();
+
+		return;
+		// compareTo 는 사전식 순서가 어떻게 되는지 알 수 있음. 크기 비교를 통해서 
+		//compareTo는 int 로 받아야한다
+  }
+  }
