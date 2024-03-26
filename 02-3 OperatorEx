@@ -1,0 +1,66 @@
+import java.util.Scanner;
+public class operatorEx {
+
+	public static void main(String[] args) {
+		
+
+				/*
+				 Scanner sc = new Scanner(System.in);
+
+				System.out.print ("정수를 입력하세요 : ");
+
+				int time = sc.nextInt();
+
+				int hour = time/3600;
+
+				int minute = time%3600/60;
+
+				int second = time%3600%60; // second = time%60; 도 가능함 
+
+				
+
+				System.out.println(time+"초는 "+hour+"시간, "+minute+"분, "+second+"초입니다.");
+	
+				sc.close();
+
+				
+
+				*/
+
+				
+				Scanner sc=new Scanner(System.in);
+
+				System.out.print("금액을 입력하세요 : ");
+
+				
+
+				int m = sc.nextInt();
+
+				
+
+				int n50000= m/50000;
+
+				int n10000= m%50000/10000;
+
+				int n5000= m%50000%10000/5000;
+
+				int n1000=m%50000%10000%5000/1000;
+
+				int remain =m%50000%10000%5000%1000;
+
+				
+
+				System.out.println("오만원 :"+n50000);
+
+				System.out.println("만원 : "+n10000);
+
+				System.out.println("오천원 : "+n5000);
+
+				System.out.println("천원 : "+n1000);
+
+				System.out.println("나머지 : "+remain);
+
+				sc.close();
+
+		}
+}
