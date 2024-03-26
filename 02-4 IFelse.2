@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class IFelse {
+
+	public static void main(String[] args) {
+			
+Scanner sc=new Scanner(System.in);
+
+		System.out.print("점수를 입력하세요(0~100)");
+
+		int score=sc.nextInt();
+
+		System.out.print("학년을 입력하세요(1~4)");
+
+		int year = sc.nextInt();
+
+		if (year>=1 && year<3) { // year==4 로 해도됨 
+
+			if(score>=60) { // if는 {} 한 명령어면 생략 가능
+
+				System.out.print("합격!");
+
+			}
+
+				else
+
+					System.out.print("불합격!");
+
+				}
+
+		
+
+		else {
+
+			if (score>=70) {
+
+				System.out.print("합격!");
+
+			}
+
+			else 
+
+				System.out.print("불합격!");
+
+		}
+
+		sc.close();
+
+		}
+  }
