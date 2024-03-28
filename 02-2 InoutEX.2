@@ -35,3 +35,67 @@ Scanner sc = new Scanner(System.in);
 			
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+/*
+import java.util.Scanner;
+
+public class ScannerEX {
+	//Scanner sc=new Scanner(System.in); 맴버변수로 선언 후 사용 후에도 닫으면 안되고 제일 마지막에 닫아줘야함
+	// 스캐너는 한개 불러서 한개만 사용
+	public static void main(String[] args) {
+		/*Scanner sc;
+		sc=new Scanner(System.in);
+		
+		System.out.println("이름, 도시, 나이, 체중, 독신여부 입력");
+		String name, city;
+		int age;
+		double wgt;
+		boolean sg;
+		name=sc.next();
+		city=sc.next();
+		age=sc.nextInt();
+		wgt=sc.nextDouble();
+		sg=sc.nextBoolean();
+		
+		System.out.print("이름은 "+name+" 사는 곳은 "+city);
+		System.out.println(" 나이는 "+age+"세 ");
+		System.out.print("몸무게는 "+wgt+" 독신인가? "+sg);
+		
+		*/
+		
+		Scanner sc=new Scanner(System.in);
+		 System.out.print("입력Test?");
+		 String a=sc.next();
+		 System.out.println(a+" "+a.length());
+		 System.out.print("입력Test?");
+		 String b =sc.next();
+		 System.out.println(b+" "+b.length());
+		 sc.nextLine(); //키보드 버퍼를 모두 읽어 비운다ㅏㅏㅏㅏㅏㅏㅏㅏㅏ. / 중요요요요요요
+		 System.out.print("이름?");
+		 String c =sc.nextLine();//nextLine은 띄어쓰기 포함해서 읽음.  nextLine이랑 next 의 차이점 알것.
+		 // nextLime은 개행을 읽어버린다 -> 버퍼 비우기//
+		 System.out.println(c+" "+c.length());
+		 //스캐너를 닫고 또 열면 오류
+		 
+		 System.out.print("문자?");//next는 string
+		 char d= sc.next().charAt(0);
+		 System.out.println(d+" ");
+	}
+
+}
+
+
+
+
+
+*/
