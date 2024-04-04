@@ -11,7 +11,7 @@ public class IFelse {
 		b = sc.nextDouble();
 			
 
-			 if (op.equals("+") ) 
+			 if (op.equals("+") ) //제발 string은 == 연산 불가!! equals()함수 사용
 				System.out.print( a + " + " +b +" = "+ (a+b));
 					
 			else if ( op.equals("-") ) 
