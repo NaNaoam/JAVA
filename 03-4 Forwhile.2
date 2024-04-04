@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ForWhileEx {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+
+		int sum=0;
+
+		for (int n=1; n!=0 && n>0 ; ) { //0을 넣으면 for문이 종료
+
+			if (n%3 == 0)
+				sum += n;
+			n=sc.nextInt();
+
+	
+		}
+
+		System.out.print("합계= "+sum);
+
+		sc.close();
+	}
+}
+		
+
+		
