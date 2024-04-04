@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class ForWhileEx {
+
+	public static void main(String[] args) {
+		 Scanner sc = new Scanner(System.in);
+
+		
+
+		int n=0, sum =0, count=0;
+
+		while( n != -1) {
+
+			sum += n;
+
+			System.out.print("정수입력?");
+
+			n = sc.nextInt();
+
+			count ++;
+
+		
+		}
+
+		count --; // -1이면 while 문 탈출이니깐 -1도 count에 +1됨. -1을 해줘야 평균 값이 올바르게 나옴.  
+
+		if(count != 0)
+
+		System.out.println("평균="+(double)sum/count);
+
+		
+
+		sc.close();
+	}
+}
+		
