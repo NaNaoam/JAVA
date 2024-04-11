@@ -1,0 +1,60 @@
+
+public class ForWhile {
+
+	public static void main(String[] args) {
+		make1();
+		System.out.println(); //버퍼 비우기
+		make2();
+		System.out.println();
+		make3();
+		System.out.println();
+		
+	}
+
+
+
+public static void make1() {
+	int count =1;
+	while (count != 5) {
+		for (int i=0;i<10;i++)
+			System.out.print(i);
+	count++;
+	System.out.print("\n");
+	}
+	
+}
+
+public static void make2() {
+	
+	int dis = 10;
+	while (dis != 0) {
+		for (int i=0;i<dis;i++)
+			System.out.print(i);
+	
+	dis --;
+	System.out.print("\n");
+	}
+	
+}
+
+public static void make3() {
+	int count =10;
+	int count2 =0;
+	
+	while (count != 0) {
+		int count3 = 0;
+		for (int blink = 0; blink<count2;blink++) {
+			System.out.print(" ");
+			count3++;
+		}
+		for (int i=0; i<count ;i++) {
+			System.out.print(count3);
+			count3++;
+		}
+	count--;
+	count2++;
+	System.out.print("\n");
+	}
+	
+}
+}
